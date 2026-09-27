@@ -186,3 +186,203 @@ ul {
   box-shadow: 1px 1px 0px var(--text-charcoal);
   transform: translate(1px, 1px);
 }
+
+/* 
+  ---------------------------------------------------------------------------
+  4. HOME / HERO SECTION STYLING
+  ---------------------------------------------------------------------------
+*/
+
+/* Padding for the hero area */
+.hero-section {
+  padding: 3rem 1.5rem;
+}
+
+/* 
+  .hero-container:
+  - `display: grid;` divides the section into columns.
+  - `grid-template-columns: 1fr 1fr;` creates two equal columns side-by-side.
+  - `gap: 2rem;` sets spacing between the text card and the image card.
+*/
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Left side text card: styled like a Y2K OS window panel */
+.hero-text-card {
+  background-color: var(--surface-stone);
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-soft);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  border: 1px solid var(--border-dark);
+  padding: 4px 10px;
+  width: fit-content;
+}
+
+.badge-dot {
+  color: var(--text-charcoal);
+  font-size: 0.6rem;
+}
+
+.hero-title {
+  font-family: var(--font-header);
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: var(--text-charcoal);
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 90%;
+}
+
+/* Button container */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* 
+  General Button Styles:
+  - `transition: all 0.15s ease-in-out;` makes hover motion smooth.
+*/
+.btn {
+  font-family: var(--font-header);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid var(--border-dark);
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--text-charcoal);
+  color: var(--bg-cream);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background-color: var(--surface-stone-hover);
+  color: var(--text-charcoal);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-stone);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Metadata grid inside hero card */
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-dark);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.meta-val {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-header);
+}
+
+/* 
+  Right side Y2K Window Frame for campaign image 
+*/
+.hero-image-card {
+  border: 2px solid var(--border-dark);
+  background-color: var(--surface-stone);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.window-header {
+  background-color: var(--text-charcoal);
+  color: var(--bg-cream);
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.window-controls span {
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+.hero-image-wrapper {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(102%) saturate(95%);
+}
+
+/* Responsive design for tablets and mobile devices */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* Stack into 1 single column on small screens */
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
