@@ -1,105 +1,50 @@
 <!DOCTYPE html>
-<!-- 
-  =============================================================================
-  PHENOM - Home Page (index.html)
-  =============================================================================
--->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHENOM | Home</title>
+  
+  <title>PHENOM | Y2K Streetwear</title>
 
-  <!-- Google Fonts: 'Syne' (headers) and 'Inter' (body text) -->
+  <!-- Google Fonts import: 'Syne' for bold Y2K headers, 'Inter' for clean body text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
+  <!-- <link rel="stylesheet">: Connects our HTML structure to our CSS stylesheet for colors & layouts -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR: Shared top navigation bar across all pages -->
+  <!--NAVIGATION BAR-->
   <header class="site-header">
     <nav class="navbar">
       
-      <a href="index.html" class="brand-logo">
+      <!-- Brand Logo / Badge -->
+      <a href="#home" class="brand-logo">
         <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
       </a>
 
-      <!-- Page Links: Linking to separate HTML files -->
+      <!-- Navigation Links -->
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-item active">HOME</a></li>
-        <li><a href="signin.html" class="nav-item">SIGN IN</a></li>
-        <li><a href="shop.html" class="nav-item">SHOP</a></li>
-        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
-        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+        <!-- <li> is a List Item inside an Unordered List <ul> -->
+        <li><a href="#home" class="nav-item">HOME</a></li>
+        <li><a href="#signin" class="nav-item">SIGN IN</a></li>
+        <li><a href="#shop" class="nav-item">SHOP</a></li>
+        <li><a href="#lookbook" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="#contact" class="nav-item">CONTACT</a></li>
       </ul>
 
+      <!-- Right Side Action Badge (pure HTML visual cart badge) -->
       <div class="nav-actions">
-        <a href="shop.html" class="cart-badge">CART (0)</a>
+        <a href="#shop" class="cart-badge">MY CART</a>
       </div>
 
     </nav>
   </header>
 
-  <!-- HOME PAGE CONTENT -->
+  <!-- Main container where future sections will be added step by step -->
   <main class="main-content">
-    
-    <section class="hero-section">
-      <div class="hero-container">
-        
-        <!-- Left Column: Title & CTA -->
-        <div class="hero-text-card">
-          <div class="hero-badge">
-            <span class="badge-dot">●</span> DROP 001 // NOW AVAILABLE
-          </div>
-          
-          <h1 class="hero-title">FUTURE<br>NOSTALGIA</h1>
-          
-          <p class="hero-subtitle">
-            Minimalist Y2K webcore streetwear engineered with heavy-weight fabrics, distressed cuts, and soft muted neutral tones.
-          </p>
-          
-          <div class="hero-actions">
-            <a href="shop.html" class="btn btn-primary">EXPLORE SHOP →</a>
-            <a href="lookbook.html" class="btn btn-secondary">VIEW LOOKBOOK</a>
-          </div>
-
-          <div class="hero-meta">
-            <div class="meta-item">
-              <span class="meta-label">COLLECTION</span>
-              <span class="meta-val">001 / UNISEX</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">PALETTE</span>
-              <span class="meta-val">MUTED STONE</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">SHIPPING</span>
-              <span class="meta-val">WORLDWIDE</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Campaign OS Window -->
-        <div class="hero-image-card">
-          <div class="window-header">
-            <span class="window-title">phenom_campaign_v1.jpg</span>
-            <div class="window-controls">
-              <span>_</span>
-              <span>□</span>
-              <span>✕</span>
-            </div>
-          </div>
-          <div class="hero-image-wrapper">
-            <img src="images/hero.jpg" alt="PHENOM Y2K Streetwear Campaign" class="hero-img">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
   </main>
 
 </body>
