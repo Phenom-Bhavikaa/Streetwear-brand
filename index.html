@@ -136,6 +136,81 @@
       </div>
     </section>
 
+    <!-- 
+      =========================================================================
+      3. SIGN IN / AUTHENTICATION SECTION
+      =========================================================================
+      <section id="signin">: Target anchor for navbar link <a href="#signin">.
+    -->
+    <section id="signin" class="signin-section">
+      <div class="signin-container">
+        
+        <!-- Y2K Form Window Card -->
+        <div class="signin-card">
+          <!-- Window Title Bar -->
+          <div class="window-header">
+            <span class="window-title">phenom_auth_v1.exe</span>
+            <div class="window-controls">
+              <span>_</span>
+              <span>□</span>
+              <span>✕</span>
+            </div>
+          </div>
+
+          <div class="signin-content">
+            
+            <div class="form-header">
+              <h2 class="form-title">MEMBER ACCESS</h2>
+              <p class="form-subtitle">Sign in to track orders or access exclusive drop privileges.</p>
+            </div>
+
+            <!-- 
+              <form>: HTML container that collects input fields. 
+              action="#" prevents navigating away on click.
+            -->
+            <form action="#" class="auth-form" onsubmit="event.preventDefault();">
+              
+              <!-- Email Input Field Group -->
+              <div class="form-group">
+                <!-- <label>: Text label bound to the input element -->
+                <label for="email" class="form-label">EMAIL ADDRESS / USER ID</label>
+                <!-- <input>: User typing field -->
+                <input type="email" id="email" class="form-input" placeholder="user@phenom.club" required>
+              </div>
+
+              <!-- Password Input Field Group -->
+              <div class="form-group">
+                <label for="password" class="form-label">PASSCODE</label>
+                <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+              </div>
+
+              <!-- Checkbox & Forgot Password options -->
+              <div class="form-options">
+                <label class="checkbox-label">
+                  <!-- <input type="checkbox">: Toggle box for boolean choice -->
+                  <input type="checkbox" checked>
+                  <span>REMEMBER DEVICE</span>
+                </label>
+                <a href="#signin" class="forgot-link">FORGOT PASSCODE?</a>
+              </div>
+
+              <!-- <button type="submit">: Triggers form submission -->
+              <button type="submit" class="btn btn-primary form-submit-btn">AUTHENTICATE →</button>
+
+            </form>
+
+            <!-- Switch to Signup UI -->
+            <div class="form-footer">
+              <span>NEW TO PHENOM?</span>
+              <a href="#signin" class="switch-link">[ CREATE ACCOUNT ]</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
 </body>

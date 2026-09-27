@@ -386,3 +386,159 @@ ul {
   }
 }
 
+/* 
+  ---------------------------------------------------------------------------
+  5. SIGN IN / AUTHENTICATION SECTION STYLING
+  ---------------------------------------------------------------------------
+*/
+.signin-section {
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-container {
+  width: 100%;
+  max-width: 480px; /* Constrains form to a clean window size */
+}
+
+/* Y2K window container styling */
+.signin-card {
+  background-color: var(--surface-stone);
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.signin-content {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-header {
+  text-align: center;
+  border-bottom: 1px dashed var(--border-dark);
+  padding-bottom: 1rem;
+}
+
+.form-title {
+  font-family: var(--font-header);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-charcoal);
+}
+
+.form-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Form group stack */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-family: var(--font-header);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-charcoal);
+}
+
+/* 
+  .form-input:
+  Styling text fields with crisp Y2K borders and soft cream background.
+*/
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  border: 2px solid var(--border-dark);
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Input focus effect: highlights border when user clicks into field */
+.form-input:focus {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 0px var(--text-charcoal);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-family: var(--font-header);
+  font-weight: 700;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  accent-color: var(--text-charcoal);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.forgot-link {
+  color: var(--text-muted);
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+  color: var(--text-charcoal);
+}
+
+.form-submit-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-family: var(--font-header);
+  font-weight: 700;
+  border-top: 1px dashed var(--border-dark);
+  padding-top: 1rem;
+  color: var(--text-muted);
+}
+
+.switch-link {
+  color: var(--text-charcoal);
+}
+
+.switch-link:hover {
+  background-color: var(--text-charcoal);
+  color: var(--bg-cream);
+  padding: 2px 4px;
+}
+
+
