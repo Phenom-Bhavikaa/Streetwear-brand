@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 
+  =============================================================================
+  PHENOM - Sign In / Account Page (signin.html)
+  =============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHENOM | Sign In</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      
+      <a href="index.html" class="brand-logo">
+        <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">HOME</a></li>
+        <li><a href="signin.html" class="nav-item active">SIGN IN</a></li>
+        <li><a href="shop.html" class="nav-item">SHOP</a></li>
+        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="shop.html" class="cart-badge">CART (0)</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- SIGN IN PAGE CONTENT -->
+  <main class="main-content">
+    
+    <section class="signin-section">
+      <div class="signin-container">
+        
+        <div class="signin-card">
+          <div class="window-header">
+            <span class="window-title">phenom_auth_v1.exe</span>
+            <div class="window-controls">
+              <span>_</span>
+              <span>□</span>
+              <span>✕</span>
+            </div>
+          </div>
+
+          <div class="signin-content">
+            
+            <div class="form-header">
+              <h2 class="form-title">MEMBER ACCESS</h2>
+              <p class="form-subtitle">Sign in to track orders or access exclusive drop privileges.</p>
+            </div>
+
+            <form action="#" class="auth-form" onsubmit="event.preventDefault();">
+              
+              <div class="form-group">
+                <label for="email" class="form-label">EMAIL ADDRESS / USER ID</label>
+                <input type="email" id="email" class="form-input" placeholder="user@phenom.club" required>
+              </div>
+
+              <div class="form-group">
+                <label for="password" class="form-label">PASSCODE</label>
+                <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-label">
+                  <input type="checkbox" checked>
+                  <span>REMEMBER DEVICE</span>
+                </label>
+                <a href="#" class="forgot-link">FORGOT PASSCODE?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">AUTHENTICATE →</button>
+
+            </form>
+
+            <div class="form-footer">
+              <span>NEW TO PHENOM?</span>
+              <a href="#" class="switch-link">[ CREATE ACCOUNT ]</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

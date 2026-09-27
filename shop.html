@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- 
+  =============================================================================
+  PHENOM - Shop Page (shop.html)
+  =============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHENOM | Shop</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      
+      <a href="index.html" class="brand-logo">
+        <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">HOME</a></li>
+        <li><a href="signin.html" class="nav-item">SIGN IN</a></li>
+        <li><a href="shop.html" class="nav-item active">SHOP</a></li>
+        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="shop.html" class="cart-badge">CART (0)</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- SHOP PAGE CONTENT -->
+  <main class="main-content">
+    
+    <section class="shop-section">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">[ DROP 001 ]</span>
+          <h2 class="section-title">FEATURED COLLECTION</h2>
+          <p class="section-desc">Hover over any product box to reveal garment specifications.</p>
+        </div>
+
+        <!-- 4-Product Grid -->
+        <div class="product-grid">
+          
+          <!-- Product 1: Striped Distressed Knit Sweater -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product1.jpg" alt="Striped Distressed Knit Sweater" class="product-img">
+              
+              <!-- Pure CSS Hover Overlay -->
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Distressed blue-black knitwear with off-shoulder neckline, silver star pendant accent, and raw Y2K punk finish.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $85</button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">STRIPED DISTRESSED KNIT</h3>
+              <span class="product-price">$85.00</span>
+            </div>
+          </div>
+
+          <!-- Product 2: Cyber Guitar Graphic Top -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product2.jpg" alt="Cyber Guitar Graphic Top" class="product-img">
+              
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Off-shoulder heather gray top with cyber gothic guitar typography print and layered double straps.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $48</button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">CYBER GUITAR GRAPHIC TOP</h3>
+              <span class="product-price">$48.00</span>
+            </div>
+          </div>
+
+          <!-- Product 3: Low-Rise Flared Denim -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product3.jpg" alt="Low-Rise Flared Denim Jeans" class="product-img">
+              
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Vintage washed rigid cotton denim with low-rise waist fit, whiskered thighs, and exaggerated flare leg cut.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $95</button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">LOW-RISE FLARED DENIM</h3>
+              <span class="product-price">$95.00</span>
+            </div>
+          </div>
+
+          <!-- Product 4: Cyber Sigil Zip Hoodie -->
+          <div class="product-card">
+            <div class="product-image-box">
+              <img src="images/product4.jpg" alt="Cyber Sigil Zip Hoodie" class="product-img">
+              
+              <div class="product-overlay">
+                <span class="overlay-tag">SPECIFICATIONS</span>
+                <p class="overlay-desc">Heavyweight black fleece zip sweater featuring chrome cyber sigil chest artwork and layered stand collar.</p>
+                <button class="btn btn-primary add-cart-btn">ADD TO CART — $110</button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">CYBER SIGIL ZIP HOODIE</h3>
+              <span class="product-price">$110.00</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

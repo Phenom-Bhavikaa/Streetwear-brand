@@ -1,103 +1,71 @@
 <!DOCTYPE html>
 <!-- 
   =============================================================================
-  PHENOM - Y2K Streetwear Brand Website
-  =============================================================================
-  WHAT IS HTML?
-  HTML stands for HyperText Markup Language. It provides the backbone/skeleton 
-  of a webpage. HTML uses "tags" written inside angle brackets like <nav> and <div> 
-  to tell the web browser what elements exist on the page.
+  PHENOM - Home Page (index.html)
   =============================================================================
 -->
 <html lang="en">
 <head>
-  <!-- <meta charset="UTF-8">: Sets character encoding to UTF-8 so special characters render correctly -->
   <meta charset="UTF-8">
-  <!-- <meta name="viewport">: Makes the website responsive on mobile phones and tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>PHENOM | Y2K Streetwear</title>
+  <title>PHENOM | Home</title>
 
-  <!-- Google Fonts import: 'Syne' for bold Y2K headers, 'Inter' for clean body text -->
+  <!-- Google Fonts: 'Syne' (headers) and 'Inter' (body text) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-  <!-- <link rel="stylesheet">: Connects our HTML structure to our CSS stylesheet for colors & layouts -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- 
-    ===========================================================================
-    1. NAVIGATION BAR (NAVBAR)
-    ===========================================================================
-    <header>: Wraps the top banner area of the website.
-    <nav>: Semantic HTML tag specifically for major navigation links.
-  -->
+  <!-- NAVBAR: Shared top navigation bar across all pages -->
   <header class="site-header">
     <nav class="navbar">
       
-      <!-- Brand Logo / Badge -->
-      <a href="#home" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
       </a>
 
-      <!-- Navigation Links -->
+      <!-- Page Links: Linking to separate HTML files -->
       <ul class="nav-links">
-        <!-- <li> is a List Item inside an Unordered List <ul> -->
-        <li><a href="#home" class="nav-item">HOME</a></li>
-        <li><a href="#signin" class="nav-item">SIGN IN</a></li>
-        <li><a href="#shop" class="nav-item">SHOP</a></li>
-        <li><a href="#lookbook" class="nav-item">LOOKBOOK</a></li>
-        <li><a href="#contact" class="nav-item">CONTACT</a></li>
+        <li><a href="index.html" class="nav-item active">HOME</a></li>
+        <li><a href="signin.html" class="nav-item">SIGN IN</a></li>
+        <li><a href="shop.html" class="nav-item">SHOP</a></li>
+        <li><a href="lookbook.html" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="contact.html" class="nav-item">CONTACT</a></li>
       </ul>
 
-      <!-- Right Side Action Badge (pure HTML visual cart badge) -->
       <div class="nav-actions">
-        <a href="#shop" class="cart-badge">CART (0)</a>
+        <a href="shop.html" class="cart-badge">CART (0)</a>
       </div>
 
     </nav>
   </header>
 
-  <!-- Main container where future sections will be added step by step -->
+  <!-- HOME PAGE CONTENT -->
   <main class="main-content">
-
-    <!-- 
-      =========================================================================
-      2. HOME / HERO SECTION
-      =========================================================================
-      <section>: A semantic HTML tag used to group related content together.
-      id="home": Allows navbar link <a href="#home"> to scroll directly here.
-    -->
-    <section id="home" class="hero-section">
+    
+    <section class="hero-section">
       <div class="hero-container">
         
-        <!-- Left Column: Headline, Description & Buttons -->
+        <!-- Left Column: Title & CTA -->
         <div class="hero-text-card">
-          
-          <!-- Category / Drop Badge -->
           <div class="hero-badge">
             <span class="badge-dot">●</span> DROP 001 // NOW AVAILABLE
           </div>
           
-          <!-- <h1>: Main chunky Y2K headline (only one <h1> per page for SEO) -->
           <h1 class="hero-title">FUTURE<br>NOSTALGIA</h1>
           
-          <!-- <p>: Paragraph text explaining the brand vibe -->
           <p class="hero-subtitle">
-            Minimalist Y2K webcore streetwear engineered with heavy-weight fabrics, oversized boxy cuts, and soft muted neutral tones.
+            Minimalist Y2K webcore streetwear engineered with heavy-weight fabrics, distressed cuts, and soft muted neutral tones.
           </p>
           
-          <!-- Call To Action (CTA) Buttons -->
           <div class="hero-actions">
-            <!-- <a> tags styled as primary & secondary Y2K action buttons -->
-            <a href="#shop" class="btn btn-primary">EXPLORE SHOP →</a>
-            <a href="#lookbook" class="btn btn-secondary">VIEW LOOKBOOK</a>
+            <a href="shop.html" class="btn btn-primary">EXPLORE SHOP →</a>
+            <a href="lookbook.html" class="btn btn-secondary">VIEW LOOKBOOK</a>
           </div>
 
-          <!-- Feature Specs Grid (Early 2000s stats metadata table) -->
           <div class="hero-meta">
             <div class="meta-item">
               <span class="meta-label">COLLECTION</span>
@@ -112,12 +80,10 @@
               <span class="meta-val">WORLDWIDE</span>
             </div>
           </div>
-
         </div>
 
-        <!-- Right Column: Hero Visual in a Y2K OS Window Box -->
+        <!-- Right Column: Campaign OS Window -->
         <div class="hero-image-card">
-          <!-- Window Header Titlebar (Classic early 2000s webcore window header) -->
           <div class="window-header">
             <span class="window-title">phenom_campaign_v1.jpg</span>
             <div class="window-controls">
@@ -126,85 +92,8 @@
               <span>✕</span>
             </div>
           </div>
-          
-          <!-- <img>: Displays our campaign photo -->
           <div class="hero-image-wrapper">
             <img src="images/hero.jpg" alt="PHENOM Y2K Streetwear Campaign" class="hero-img">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 
-      =========================================================================
-      3. SIGN IN / AUTHENTICATION SECTION
-      =========================================================================
-      <section id="signin">: Target anchor for navbar link <a href="#signin">.
-    -->
-    <section id="signin" class="signin-section">
-      <div class="signin-container">
-        
-        <!-- Y2K Form Window Card -->
-        <div class="signin-card">
-          <!-- Window Title Bar -->
-          <div class="window-header">
-            <span class="window-title">phenom_auth_v1.exe</span>
-            <div class="window-controls">
-              <span>_</span>
-              <span>□</span>
-              <span>✕</span>
-            </div>
-          </div>
-
-          <div class="signin-content">
-            
-            <div class="form-header">
-              <h2 class="form-title">MEMBER ACCESS</h2>
-              <p class="form-subtitle">Sign in to track orders or access exclusive drop privileges.</p>
-            </div>
-
-            <!-- 
-              <form>: HTML container that collects input fields. 
-              action="#" prevents navigating away on click.
-            -->
-            <form action="#" class="auth-form" onsubmit="event.preventDefault();">
-              
-              <!-- Email Input Field Group -->
-              <div class="form-group">
-                <!-- <label>: Text label bound to the input element -->
-                <label for="email" class="form-label">EMAIL ADDRESS / USER ID</label>
-                <!-- <input>: User typing field -->
-                <input type="email" id="email" class="form-input" placeholder="user@phenom.club" required>
-              </div>
-
-              <!-- Password Input Field Group -->
-              <div class="form-group">
-                <label for="password" class="form-label">PASSCODE</label>
-                <input type="password" id="password" class="form-input" placeholder="••••••••" required>
-              </div>
-
-              <!-- Checkbox & Forgot Password options -->
-              <div class="form-options">
-                <label class="checkbox-label">
-                  <!-- <input type="checkbox">: Toggle box for boolean choice -->
-                  <input type="checkbox" checked>
-                  <span>REMEMBER DEVICE</span>
-                </label>
-                <a href="#signin" class="forgot-link">FORGOT PASSCODE?</a>
-              </div>
-
-              <!-- <button type="submit">: Triggers form submission -->
-              <button type="submit" class="btn btn-primary form-submit-btn">AUTHENTICATE →</button>
-
-            </form>
-
-            <!-- Switch to Signup UI -->
-            <div class="form-footer">
-              <span>NEW TO PHENOM?</span>
-              <a href="#signin" class="switch-link">[ CREATE ACCOUNT ]</a>
-            </div>
-
           </div>
         </div>
 
