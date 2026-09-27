@@ -1,0 +1,188 @@
+/* 
+=============================================================================
+PHENOM - CSS STYLESHEET
+=============================================================================
+WHAT IS CSS?
+CSS stands for Cascading Style Sheets. While HTML builds the skeleton of a site,
+CSS adds the visual design: colors, fonts, spacing, borders, layouts, and animations.
+=============================================================================
+*/
+
+/* 
+  ---------------------------------------------------------------------------
+  1. CSS COLOR & DESIGN VARIABLES
+  ---------------------------------------------------------------------------
+  :root allows us to store color hex codes in custom variables like --bg-cream.
+  This makes it super easy to keep colors consistent across the entire website.
+*/
+:root {
+  /* Color Palette: Soft Muted Neutrals (Y2K Webcore Minimalist) */
+  --bg-cream: #F7F6F2;        /* Off-white / cream background */
+  --surface-stone: #E8E5DF;   /* Stone / taupe gray for cards and sections */
+  --surface-stone-hover: #DCD8D0; /* Slightly darker stone for hover states */
+  --text-charcoal: #1A1918;   /* Deep charcoal / near-black for primary text */
+  --text-muted: #5C5A56;      /* Soft charcoal for secondary subtitle text */
+  --border-dark: #1A1918;     /* Crisp charcoal border for Y2K boxy structure */
+  
+  /* Fonts */
+  --font-header: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Shadows: Soft Y2K webcore block shadow */
+  --shadow-soft: 3px 3px 0px var(--text-charcoal);
+  --shadow-hover: 5px 5px 0px var(--text-charcoal);
+}
+
+/* 
+  ---------------------------------------------------------------------------
+  2. GLOBAL CSS RESET & BOX MODEL
+  ---------------------------------------------------------------------------
+  By default, browsers add random margins and paddings to HTML elements. 
+  `*` selects EVERY element on the page and resets those margins to 0.
+  `box-sizing: border-box` makes sure element padding doesn't push width out.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking on navbar section links (#home, #shop, etc.) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  line-height: 1.6;
+  /* subtle grid pattern background for webcore layout aesthetic */
+  background-image: radial-gradient(var(--surface-stone) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Remove underline from links globally */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove bullet points from lists globally */
+ul {
+  list-style: none;
+}
+
+/* 
+  ---------------------------------------------------------------------------
+  3. NAVIGATION BAR STYLING
+  ---------------------------------------------------------------------------
+*/
+
+/* 
+  header.site-header:
+  - `position: sticky; top: 0;` keeps the header fixed at the top when scrolling.
+  - `z-index: 1000;` ensures the navbar stays on top of all other elements.
+*/
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-cream);
+  border-bottom: 2px solid var(--border-dark);
+}
+
+/* 
+  .navbar:
+  - `display: flex;` puts child elements (logo, links, cart) side-by-side in a row.
+  - `justify-content: space-between;` pushes logo to left, links to center, cart to right.
+  - `align-items: center;` vertically aligns all items to the center line.
+*/
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container inside the header */
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 
+  .brand-logo:
+  Styling the brand name to look bold and futuristic like early 2000s tech brands.
+*/
+.brand-logo {
+  font-family: var(--font-header);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-charcoal);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo-symbol {
+  font-size: 1.1rem;
+}
+
+.logo-sub {
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  background-color: var(--surface-stone);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-dark);
+}
+
+/* 
+  .nav-links:
+  - `display: flex;` aligns menu items horizontally in a line.
+  - `gap: 2rem;` puts equal spacing between each menu item.
+*/
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  font-family: var(--font-header);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-charcoal);
+  padding: 0.4rem 0.8rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect on navbar links: gives a Y2K stone box highlight */
+.nav-item:hover {
+  background-color: var(--surface-stone);
+  border-color: var(--border-dark);
+  box-shadow: 2px 2px 0px var(--text-charcoal);
+}
+
+/* 
+  .cart-badge:
+  Styling the cart item on the right as a Y2K button.
+*/
+.cart-badge {
+  font-family: var(--font-header);
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: var(--surface-stone);
+  color: var(--text-charcoal);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.15s ease-in-out;
+}
+
+.cart-badge:hover {
+  background-color: var(--text-charcoal);
+  color: var(--bg-cream);
+  box-shadow: 1px 1px 0px var(--text-charcoal);
+  transform: translate(1px, 1px);
+}

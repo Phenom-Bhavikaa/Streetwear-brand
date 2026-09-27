@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- 
+  =============================================================================
+  PHENOM - Y2K Streetwear Brand Website
+  =============================================================================
+  WHAT IS HTML?
+  HTML stands for HyperText Markup Language. It provides the backbone/skeleton 
+  of a webpage. HTML uses "tags" written inside angle brackets like <nav> and <div> 
+  to tell the web browser what elements exist on the page.
+  =============================================================================
+-->
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">: Sets character encoding to UTF-8 so special characters render correctly -->
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport">: Makes the website responsive on mobile phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PHENOM | Y2K Streetwear</title>
+
+  <!-- Google Fonts import: 'Syne' for bold Y2K headers, 'Inter' for clean body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet">: Connects our HTML structure to our CSS stylesheet for colors & layouts -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 
+    ===========================================================================
+    1. NAVIGATION BAR (NAVBAR)
+    ===========================================================================
+    <header>: Wraps the top banner area of the website.
+    <nav>: Semantic HTML tag specifically for major navigation links.
+  -->
+  <header class="site-header">
+    <nav class="navbar">
+      
+      <!-- Brand Logo / Badge -->
+      <a href="#home" class="brand-logo">
+        <span class="logo-symbol">✱</span> PHENOM <span class="logo-sub">[00]</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <!-- <li> is a List Item inside an Unordered List <ul> -->
+        <li><a href="#home" class="nav-item">HOME</a></li>
+        <li><a href="#signin" class="nav-item">SIGN IN</a></li>
+        <li><a href="#shop" class="nav-item">SHOP</a></li>
+        <li><a href="#lookbook" class="nav-item">LOOKBOOK</a></li>
+        <li><a href="#contact" class="nav-item">CONTACT</a></li>
+      </ul>
+
+      <!-- Right Side Action Badge (pure HTML visual cart badge) -->
+      <div class="nav-actions">
+        <a href="#shop" class="cart-badge">CART (0)</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Main container where future sections will be added step by step -->
+  <main class="main-content">
+    <!-- Future sections will go here! -->
+  </main>
+
+</body>
+</html>
